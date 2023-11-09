@@ -1,0 +1,33 @@
+﻿@model ProductUpdateViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/input.css"/>
+</head>
+<body>
+    <section class="container">
+        <h1>Update Product</h1>
+        <form method="POST">
+            <p>Name</p>
+            <input asp-for="Product.Name" id="name" type="text" placeholder="enter product name">
+            
+            <p>Description</p>
+            <input asp-for="Product.Description" id="description" type="text" placeholder="enter product description">
+            
+            <p>Price</p>
+            <input asp-for="Product.Price" id="price" type="number" placeholder="enter product price">
+            
+            <p>Discount</p>
+            <input asp-for="Product.Discount" id="discount" type="number" placeholder="enter product discount">
+            
+            <p>Image (URL)</p>
+            <input asp-for="Product.Image" id="image" type="text" placeholder="enter product image">
+
+            <input id="button" type="submit" value="Update">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Inter", sans-serif;
+}
+
+#add {
+    display: flex;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: #d73925;
+}
+
+.card {
+    width: 200px;
+    float: left;
+    margin: 0 15px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+#name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+#price {
+    font-size: 16px;
+    color: #e44d26;
+    margin-top: 10px;
+}
+
+#delete, #update {
+    display: inline-block;
+    background-color: #e44d26;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+#delete:hover, #update:hover {
+    background-color: #d73925;
+}
